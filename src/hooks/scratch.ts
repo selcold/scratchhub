@@ -9,9 +9,9 @@ export function useUserInfo(session: string | null): any | null {
   useEffect(() => {
     try {
       const ServerRequest = async () => {
-        if (session){
-            const result = await ScratchAPIGet_User(session);
-            setUserinfo(result);
+        if (session) {
+          const result = await ScratchAPIGet_User(session);
+          setUserinfo(result);
         }
       };
       ServerRequest();

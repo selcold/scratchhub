@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { ScratchAPI_Status } from "@/components/server/scratch/main";
 
 export default function Home() {
-
   const [studios, setStudios] = useState<any | null>(null);
   useEffect(() => {
     const func = async () => {

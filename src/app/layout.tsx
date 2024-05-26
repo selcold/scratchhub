@@ -23,14 +23,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className="" suppressHydrationWarning>
+    <html lang="ja" suppressHydrationWarning>
       <body
         className={`w-full min-h-[calc(100vh_-_theme(spacing.16))] ${inter.className}`}
         suppressHydrationWarning
       >
         <ThemeProvider attribute="class">
           <Suspense fallback={`...`}>
-            <Header/>
+            <Header />
           </Suspense>
           <main className="w-full h-full">{children}</main>
         </ThemeProvider>

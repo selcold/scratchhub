@@ -1,8 +1,6 @@
 "use client";
 
-import {
-  ScratchAuthGET_session,
-} from "scratch-auth-react";
+import { ScratchAuthGET_session } from "scratch-auth-react";
 
 import { useEffect, useState } from "react";
 

@@ -39,9 +39,7 @@ export const ThemeSwitch = () => {
   if (!mounted) {
     return (
       <>
-        <span
-          className="flex items-center w-[24px] h-[24px] cursor-not-allowed"
-        >
+        <span className="flex items-center w-[24px] h-[24px] cursor-not-allowed">
           <div className="animate-spin h-5 w-5 border-2 border-muted-foreground rounded-full border-t-transparent"></div>
         </span>
       </>

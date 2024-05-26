@@ -72,9 +72,7 @@ export default function Header() {
               href="#"
               className="flex items-center gap-2 text-lg font-semibold"
             >
-              <SheetClose>
-              {_cfg.header.title}
-              </SheetClose>
+              <SheetClose>{_cfg.header.title}</SheetClose>
             </Link>
             {_cfg.header.navigation.map((link, idx) => (
               <Link
@@ -82,9 +80,7 @@ export default function Header() {
                 href={link.href}
                 key={idx}
               >
-                <SheetClose>
-                {link.label}
-                </SheetClose>
+                <SheetClose>{link.label}</SheetClose>
               </Link>
             ))}
           </nav>
